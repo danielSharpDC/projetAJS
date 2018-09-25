@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="angular-1.7.2/angular.min.js"></script>
+  
+</head>
+<body>
+  <div ng-app="myApp" ng-controller="myCtrl">
+
+Full Name: {{firstName + " " + lastName}}
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.firstName = "John";
+    $scope.lastName = "Doe";
+});
+</script>
+</body>
+</html>
